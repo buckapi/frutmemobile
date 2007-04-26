@@ -18,23 +18,43 @@
         
 
         </div>
-        <div class="main-container container top-20" [hidden]="_butler.total===0">
+        <div class="main-container container top-20" [hidden]="_butler.total==0">
             <!-- wizard links -->
-            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
+            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm" [hidden]="steep!=1">
                 <div class="col">
-                    <a href="cart.html" class="wizard-link active">
+                    <a class="wizard-link active">
                         <i class="bi bi-bag shadow-sm"></i>
                         <span class="wizard-text">Productos</span>
                     </a>
                 </div>
-                <div class="col">
+               <!--  <div class="col">
                     <a href="address.html" class="wizard-link">
                         <i class="bi bi-geo-alt shadow-sm"></i>
                         <span class="wizard-text">Direccion</span>
                     </a>
-                </div>
+                </div> -->
                 <div class="col">
-                    <a href="payment.html" class="wizard-link">
+                    <a (click)="go(2)"class="wizard-link">
+                        <i class="bi bi-credit-card shadow-sm"></i>
+                        <span class="wizard-text">Pago</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm" [hidden]="steep!=2">
+                <div class="col">
+                    <a (click)="go(1)" class="wizard-link ">
+                        <i class="bi bi-bag shadow-sm"></i>
+                        <span class="wizard-text">Productos</span>
+                    </a>
+                </div>
+               <!--  <div class="col">
+                    <a href="address.html" class="wizard-link">
+                        <i class="bi bi-geo-alt shadow-sm"></i>
+                        <span class="wizard-text">Direccion</span>
+                    </a>
+                </div> -->
+                <div class="col">
+                    <a  class="wizard-link active">
                         <i class="bi bi-credit-card shadow-sm"></i>
                         <span class="wizard-text">Pago</span>
                     </a>
@@ -42,7 +62,7 @@
             </div>
 
             <!-- cart items -->
-            <div class="row mb-3">
+            <div class="row mb-3" [hidden]="steep!=1">
                 <div class="col align-self-center">
                     <h5 class="mb-0">{{_butler.totalItems}} Productos en el carro</h5>
                 </div>
@@ -50,7 +70,7 @@
                     <a [routerLink]="['home']" class="link text-color-theme">Seguir comprando <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
-            <div class="row mb-2">
+            <div class="row mb-2" [hidden]="steep!=1">
                 <div class="col-12 col-md-6 col-lg-4" *ngFor='let product of _butler.cart ;let i = index'  [hidden]="!product.oncart"  >
                     <div class="card shadow-sm product mb-3">
                         <div class="card-body">
@@ -91,6 +111,75 @@
               
             </div>
 
+             <div class="row mb-3" [hidden]="steep==1">
+                <div class="col align-self-center">
+                    <h5 class="mb-0">Método de pago</h5>
+                </div>
+            </div>
+            <div class="row mb-2" [hidden]="steep==1">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="card shadow-sm mb-3 product text-normal" [ngStyle]="{'border-color': feedOne ? '#07d765' : '#fff'}" style="border:solid;">
+                        <div class="card-body">
+                            <div class="row" (click)="addFeed(1)">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="assets/assetsfrut/img/maestro.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center" >
+                                    <p>USDT<br>
+                                        <!-- <small class="text-opac">**** **** **** 5689</small> -->
+                                    </p>
+                                </div> 
+                                <div class="col-auto align-self-center" [hidden]="feedSelected!=1">
+                                    <i class="bi bi-check text-color-theme"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="card shadow-sm mb-3 product text-normal" [ngStyle]="{'border-color': feedTwo ? '#07d765' : '#fff'}" style="border:solid;">
+                        <div class="card-body">
+                            <div class="row"(click)="addFeed(2)"> 
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="assets/assetsfrut/img/visa.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>PayPal<br>
+                                        <!-- <small class="text-opac">Add your card</small> -->
+                                    </p>
+                                </div>
+                                <div class="col-auto align-self-center" [hidden]="feedSelected!=2">
+                                    <i class="bi bi-check text-color-theme"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-12 col-md-6 col-lg-4">
+                    <a href="payment.html#" class="card shadow-sm mb-3 product text-normal">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <figure class="text-center mb-0 avatar avatar-40 page-bg rounded p-1">
+                                        <img src="assets/img/americanexp.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="col align-self-center">
+                                    <p>Maestro card<br><small class="text-opac">Apply for card</small></p>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                    <i class="bi bi-chevron-right text-color-theme"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+
             <!-- pricing -->
             <div class="row mb-3">
                 <div class="col align-self-center">
@@ -122,9 +211,16 @@
             </div>
 
             <!-- Button -->
-            <div class="row mb-3">
-                <div class="col align-self-center d-grid">
-                    <a href="address.html" class="btn btn-default btn-lg shadow-sm">Siguiente</a>
+            <div class="row mb-3"  [hidden]="steep!=1">
+                <div class="col align-self-center d-grid" >
+                    <a (click)="go(2)" class="btn btn-default btn-lg shadow-sm"> Siguiente</a>
+                </div>
+                 
+            </div> 
+            <div class="row mb-3" [hidden]="steep!=2 || feedSelected==0">
+               
+                 <div class="col align-self-center d-grid" >
+                    <a (click)="go(3)" class="btn btn-default btn-lg shadow-sm" >Procesar</a>
                 </div>
             </div>
 

@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     public _butler:Butler
   ){}
   ngOnInit(): void {
-    this.bikersScript.getUserLocation();
+    // this.bikersScript.getUserLocation();
     this.script.load(
       'jquery',
       'popper',

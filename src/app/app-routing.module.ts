@@ -8,6 +8,7 @@ const routes: Routes = [
 { path: 'notifications', loadChildren: () => import('./components/pages/notifications/notifications.module').then(m => m.NotificationsModule) },
 { path: 'cart', loadChildren: () => import('./components/pages/cart/cart.module').then(m => m.CartModule) },
 { path: 'categories', loadChildren: () => import('./components/pages/categories.module').then(m => m.CategoriesModule) },
+{ path: 'success', loadChildren: () => import('./components/success/success.module').then(m => m.SuccessModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 
