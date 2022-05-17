@@ -30,7 +30,7 @@
             "styles": [
               "src/styles.css",
               "src/assets/assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css",
-              "src/assets/assets/css/style.css"
+              "src/assets/assetsfrut/css/style-green.css"
             ],
             "scripts": [
             ],

@@ -1,6 +1,8 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { ScriptService } from '@app/services/script.service';
+
 import { ScriptStore } from '@app/services/script.store';
+
 import { SwiperOptions } from 'swiper';
 import {Butler} from '@app/services/butler.service';
 import { BikersService } from '@app/services/';
@@ -8,6 +10,33 @@ import {Map, Popup,Marker} from 'mapbox-gl';
 import { MapService } from '@app/services/map.service';
 import { Feature } from '@app/interfaces/places';
 
+interface Product {
+  id: number;
+  name: string;
+  img: string;
+  costPrice: number;
+  perc: number;
+  presentation: string;
+}
+
+const PRODUCTS: Product[] = [
+  {
+     id: 1,
+    name: 'Tomates',
+    img: 'assets/products/tomates.jpg',
+    costPrice: 7,
+    perc: 30,
+    presentation:'Kg'
+  },
+  {
+    id: 2,
+    name: 'Bananas',
+    img: 'assets/products/bananos.jpg',
+    costPrice: 1,
+    perc: 30,
+    presentation:'Kg'
+  }
+];
 
 declare var $: any;
 @Component({
@@ -15,6 +44,7 @@ declare var $: any;
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements AfterViewInit {
 
   private debounceTimer?:NodeJS.Timeout;
@@ -24,6 +54,7 @@ export class HomeComponent implements AfterViewInit {
 link:string=""; 
   constructor(
     private bikersService:BikersService,
+
     public script:ScriptService,
     private mapService:MapService,
     public _butler: Butler
@@ -59,74 +90,33 @@ if(!this._butler.details){
     this._butler.details=false;
   }
 }
-get isLoadingPlaces(){
-  return this.bikersService.isLoadingPlaces;
-}
-get isUserLocationReady():boolean{
-  return this.bikersService.isUserLocationReady;
-}
-get places() :Feature []{
-  return this.bikersService.places; 
-}
-flyTo(place:Feature ){
-  const   [lng,lat]=place.center; 
-  // this.document.getElementById("sear").blur();
-  this.mapService.flyTo([lng,lat ]);
-  this.focusRemove();
-  this.getDirections(place);
-}
-onQueryChanged(query:string=''){
-  if (this.debounceTimer)clearTimeout (this.debounceTimer);
-  this.debounceTimer=setTimeout (()=> {
-   this.bikersService.getPlacesByQuery(query);
-    // console.log(query);
-  }, 350);
-}
+
 focusRemove(){
   this.myserachElement.nativeElement.blur();
 }
-getDirections(place:Feature){
-  if (!this.bikersService.userLocation) throw Error('ubicacion no disponible');  
-  const start =this.bikersService.userLocation!;
-  const end =place.center as [number,number]  ;
-  this.mapService.getRouteBetweenPoints(start,end);
 
-}
   ngAfterViewInit(): void {
 
-    console.log(this.bikersService.userLocation);
      this.script.load(
     'jquery',
     'popper',
     'bootstrap-5',
+    'cookie',
+    'swiper',
+    'pwa-services',
+    'nouislider',
     'main',
     'color-scheme',
-    'pwa-services',
-    'chart-js',
-    'progressbar',
-    'swiper',
     'app')
     .then(data => {
       console.log('script loaded ', data);
     }).catch(error => console.log(error));
    
-    const map = new Map({
-      container: this.mapDivElement.nativeElement, // container ID
-      style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center:this.bikersService.userLocation,
-      pitch: 60, // pitch in degrees
-      bearing: 40, // bearing in degrees
-      zoom: 15 // starting zoom
-      });
-    const popup = new Popup()
-      .setHTML(`
-      <h6>Aqui estoy</h6>
-      </span>esta es mi ubicación</span>
-        `); 
-    new Marker({color:'red'}).setLngLat(this.bikersService.userLocation!)
-      .setPopup(popup)
-      .addTo(map)
-    this.mapService.setMap(map)
+
+ 
+  
 
   }
+
+  products = PRODUCTS;
 }

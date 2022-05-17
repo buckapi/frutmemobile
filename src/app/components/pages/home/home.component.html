@@ -130,26 +130,7 @@
     <main class="h-100 has-header has-footer">
 
         <!-- Header -->
-        <header class="container-fluid header">
-            <div class="row">
-                <div class="col-auto align-self-center">
-                    <button type="button" class="btn btn-link menu-btn text-color-theme">
-                        <i class="bi bi-list size-24"></i>
-                    </button>
-                </div>
-                <div class="col text-center">
-                    <div class="logo-small">
-                        <img src="assets/assetsfrut/img/logo.png" alt="" class="img">
-                        <h6>GO<br><small>MobileUX</small></h6>
-                    </div>
-                </div>
-                <div class="col-auto align-self-center">
-                    <a href="profile.html" class="link text-color-theme">
-                        <i class="bi bi-person-circle size-22"></i>
-                    </a>
-                </div>
-            </div>
-        </header>
+       
         <!-- Header ends -->
 
         <!-- main page content -->
@@ -310,10 +291,10 @@
             </div> -->  
 
             <!-- offerslides -->
-            <div class="swiper-container offerslides mb-3">
-                <!-- Additional required wrapper -->
+          <!--   <div class="swiper-container offerslides mb-3">
+              
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                 
                     <div class="swiper-slide">
                         <div class="card shadow-sm card-theme">
                             <div class="card-body py-1">
@@ -366,7 +347,7 @@
                     </div>
                 </div>
                 <div class="swiper-pagination pagination-offerslides"></div>
-            </div>
+            </div> -->
 
             <!-- Products -->
             <div class="row mb-3">
@@ -379,41 +360,40 @@
             </div>
 
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3" *ngFor='let product of products'>
                     <div class="card shadow-sm product mb-4">
                         <div class="card-body">
                             <figure class="text-center">
-                                <img src="assets/assetsfrut/img/product1.png" alt="">
+                                <img src="{{product.img}}" width="100%" alt="">
                             </figure>
                             <p class="mb-1">
-                                <small class="text-opac">Fresh</small>
-                                <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                                <small class="text-opac" style="font-size:18px;">1 kg</small>
+                                <small class="float-end" style="font-size:18px;"><span class="" style="font-size:18px;"> {{product.costPrice+(product.costPrice*product.perc/100)}}</span> </small>
                             </p>
                             <a href="product.html" class="text-normal">
-                                <h6 class="text-color-theme">Red Apple</h6>
+                                <h6 class="text-color-theme">{{product.name}}</h6>
                             </a>
                             <div class="row">
-                                <div class="col">
-                                    <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
-                                </div>
-                                <div class="col-auto">
-                                        <!-- button counter increamenter-->
-                                        <div class="counter-number">
-                                            <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                <i class="bi bi-dash size-22"></i>
-                                            </button>
-                                            <span>1</span>
-                                            <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                <i class="bi bi-plus size-22"></i>
-                                            </button>
-                                        </div>
+                                <div class="">
+                                    <div class="counter-number">
+                                      
+                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                            <i class="bi bi-dash size-22"></i>
+                                        </button>
+                                        <span>1</span>
+                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                            <i class="bi bi-plus size-22"></i>
+                                        </button>
                                     </div>
+                                    
+                                </div>
+                              
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-md-4 col-lg-3">
+ <!--                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card shadow-sm product mb-4">
                         <div class="card-body">
                             <figure class="text-center">
@@ -477,7 +457,7 @@
                             </figure>
                             <p class="mb-1">
                                 <small class="text-opac">Fresh</small>
-                                <small class="float-end"><span class="text-opac">4.5</span> <i class="bi bi-star-fill text-warning"></i></small>
+                                
                             </p>
                             <a href="product.html" class="text-normal">
                                 <h6 class="text-color-theme">Yellow Lemon</h6>
@@ -495,7 +475,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 

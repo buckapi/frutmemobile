@@ -10738,10 +10738,11 @@ strong {
 
 small, .small,
 .small {
-  font-size: 11px;
+  font-size: 18px;
   display: inline-block;
   line-height: 14px;
 }
+
 
 .fw-bold {
   font-weight: 700;
@@ -11473,7 +11474,7 @@ body {
 }
 
 main.has-header {
-  padding-top: 84px;
+  padding-top: 26px;
 }
 
 /* 10. avatar */
@@ -12034,7 +12035,10 @@ main.has-header {
 .card {
   border: none;
   border-radius: 10px;
-  background-color: transparent;
+  /*background-color: transparent;
+
+color de card
+  */
   color: #000000;
 }
 
@@ -12424,7 +12428,7 @@ main.has-header {
   border-radius: 3px;
   display: block;
   margin: 0 auto;
-  background: #4caf50;
+  background: #00dfa3;
   display: none;
 }
 
@@ -12451,9 +12455,9 @@ main.has-header {
   text-align: center;
   color: #FFFFFF;
   background: #4caf50;
-  background: -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: -moz-linear-gradient(top, #00dfa3 0%, #4caf50 50%, #00796d 100%);
+  background: -webkit-linear-gradient(top, #00dfa3 0%, #4caf50 50%, #00796d 100%);
+  background: linear-gradient(to bottom, #00dfa3 0%, #4caf50 50%, #00796d 100%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   -webkt-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
