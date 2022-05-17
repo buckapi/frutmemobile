@@ -8,6 +8,7 @@ export class Butler {
     string:string=""; 
     distance:string="";
     distance2:number=0;
+    metodo:number=0;
     total:number=0;
     totalItems:number=0;
     duration:number=0;

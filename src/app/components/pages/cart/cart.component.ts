@@ -60,8 +60,10 @@ public go(v:number){
     this.order.total=this._butler.total;
     
     if(this.feedSelected==1){
+      this._butler.metodo=1;
     this.order.metodo="USDT";}
-  if(this.feedSelected==2){this.order.metodo="PayPal";}
+  if(this.feedSelected==2){this.order.metodo="PayPal";
+  this._butler.metodo=2;}
     this.newOrder(this.order);
   }
 
@@ -82,6 +84,7 @@ public addFeed(t:number){
   if(t===2){this.feed=0.28;this.feedSelected=2;this.feedTwo=true;this.feedOne=false;}
     this.calculate();
 }
+
 feedSelected=0;
 feedOne=false;
 feedTwo=false;
