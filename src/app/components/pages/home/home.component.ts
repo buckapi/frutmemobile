@@ -149,6 +149,7 @@ focusRemove(){
   
 
   }
-
+precioDolar= 5.3;
+currency = "USD";
   products = PRODUCTS;
 }
