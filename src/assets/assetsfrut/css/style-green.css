@@ -10753,7 +10753,7 @@ small, .small,
 }
 
 .text-color-theme {
-  color: #4caf50;
+  color: #07d765;
 }
 
 .text-opac {
@@ -10830,10 +10830,10 @@ body {
 
 .dark-bg {
   color: #FFFFFF;
-  background: #4caf50, url("../img/background1@2x.png");
-  background: url("../img/background1@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background1@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background1@2x.png"), linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765, url("../img/background1@2x.png");
+  background: url("../img/background1@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background1@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background1@2x.png"), linear-gradient(to bottom, #cddc39 0%, #07d765 50%, #00796d 100%);
   background-attachment: fixed;
   background-size: 100%;
   background-position: bottom center;
@@ -10841,10 +10841,10 @@ body {
 }
 
 .dark-bg.bg2 {
-  background: #4caf50, url("../img/background2@2x.png");
-  background: url("../img/background2@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background2@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background2@2x.png"), linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765, url("../img/background2@2x.png");
+  background: url("../img/background2@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background2@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background2@2x.png"), linear-gradient(to bottom, #cddc39 0%, #07d765 50%, #00796d 100%);
   background-attachment: fixed;
   background-size: auto 100%;
   background-position: bottom center;
@@ -10852,10 +10852,10 @@ body {
 }
 
 .dark-bg.bg3 {
-  background: #4caf50, url("../img/background3@2x.png");
-  background: url("../img/background3@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background3@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: url("../img/background3@2x.png"), linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765, url("../img/background3@2x.png");
+  background: url("../img/background3@2x.png"), -moz-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background3@2x.png"), -webkit-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: url("../img/background3@2x.png"), linear-gradient(to bottom, #cddc39 0%, #07d765 50%, #00796d 100%);
   background-attachment: fixed;
   background-size: 100%;
   background-position: bottom center;
@@ -10982,7 +10982,7 @@ body {
 
 .btn-theme {
   color: #FFFFFF;
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 .btn-theme:hover, .btn-theme:focus {
@@ -11013,8 +11013,8 @@ body {
 }
 
 .btn-outline-theme {
-  color: #4caf50;
-  border-color: #4caf50;
+  color: #07d765;
+  border-color: #07d765;
   background: transparent;
 }
 
@@ -11031,14 +11031,14 @@ body {
 
 .btn-check:checked + label.btn-outline-theme {
   color: #FFFFFF;
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 .btn-gradient {
-  background: #4caf50;
-  background: -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765;
+  background: -moz-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: -webkit-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: linear-gradient(to bottom, #cddc39 0%, #07d765 50%, #00796d 100%);
   color: #FFFFFF;
   background-size: cover;
   border: 0;
@@ -11162,7 +11162,7 @@ body {
 }
 
 .noUi-target .noUi-connect {
-  background: #4caf50;
+  background: #07d765;
 }
 
 .counter-number {
@@ -11181,7 +11181,7 @@ body {
 
 .counter-number > .btn {
   background-color: #ebf7f1;
-  color: #4caf50;
+  color: #07d765;
 }
 
 .progress {
@@ -11254,16 +11254,16 @@ body {
 }
 
 .wizard-wrapper .wizard-link.active i {
-  background-color: #4caf50;
+  background-color: #07d765;
   color: #FFFFFF;
 }
 
 .wizard-wrapper .wizard-link.active .wizard-text {
-  color: #4caf50;
+  color: #07d765;
 }
 
 .wizard-wrapper .wizard-link.active .wizard-text::after {
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 .wizard-wrapper .wizard-link.filled i {
@@ -11446,7 +11446,8 @@ body {
 
 .header .logo-small img {
   vertical-align: middle;
-  width: 58px;
+  width: 150px;
+  padding: 10px;
 }
 
 .header .logo-small h6, .header .logo-small .h6 {
@@ -11691,10 +11692,10 @@ main.has-header {
 .sidebar-wrap .sidebar {
   float: left;
   display: block;
-  background: #4caf50;
-  background: -moz-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: -webkit-linear-gradient(top, #cddc39 0%, #4caf50 50%, #00796d 100%);
-  background: linear-gradient(to bottom, #cddc39 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765;
+  background: -moz-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: -webkit-linear-gradient(top, #cddc39 0%, #07d765 50%, #00796d 100%);
+  background: linear-gradient(to bottom, #cddc39 0%, #07d765 50%, #00796d 100%);
   background-attachment: fixed;
   background-size: 100% 100%;
   color: #FFFFFF;
@@ -12024,11 +12025,11 @@ main.has-header {
 }
 
 .nav-pills .nav-link {
-  color: #4caf50;
+  color: #07d765;
 }
 
 .nav-pills .nav-link.active {
-  background: #4caf50;
+  background: #07d765;
 }
 
 /* 12. card */
@@ -12166,7 +12167,7 @@ color de card
 }
 
 .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 .card .swiper-container .swiper-pagination-bullet {
@@ -12174,7 +12175,7 @@ color de card
 }
 
 .card .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 .swiperhighlight .swiper-wrapper .swiper-slide {
@@ -12433,11 +12434,11 @@ color de card
 }
 
 .footer .nav .nav-item .nav-link.active {
-  color: #4caf50;
+  color: #07d765;
 }
 
 .footer .nav .nav-item .nav-link.active span .nav-icon {
-  color: #4caf50;
+  color: #07d765;
 }
 
 .footer .nav .nav-item .nav-link.active:after {
@@ -12454,10 +12455,10 @@ color de card
   margin: -30px auto 0 auto;
   text-align: center;
   color: #FFFFFF;
-  background: #4caf50;
-  background: -moz-linear-gradient(top, #00dfa3 0%, #4caf50 50%, #00796d 100%);
-  background: -webkit-linear-gradient(top, #00dfa3 0%, #4caf50 50%, #00796d 100%);
-  background: linear-gradient(to bottom, #00dfa3 0%, #4caf50 50%, #00796d 100%);
+  background: #07d765;
+  background: -moz-linear-gradient(top, #00dfa3 0%, #07d765 50%, #00796d 100%);
+  background: -webkit-linear-gradient(top, #00dfa3 0%, #07d765 50%, #00796d 100%);
+  background: linear-gradient(to bottom, #00dfa3 0%, #07d765 50%, #00796d 100%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
   -webkt-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
@@ -12901,7 +12902,7 @@ main.has-footer {
 .daterange-center.daterangepicker .drp-calendar.right .calendar-table td.active:hover,
 .daterange-center.daterangepicker .drp-calendar.right .calendar-table td.in-range.start-date,
 .daterange-center.daterangepicker .drp-calendar.right .calendar-table td.in-range.end-date {
-  background-color: #4caf50;
+  background-color: #07d765;
 }
 
 /* 20. logo */
