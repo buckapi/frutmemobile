@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Butler } from '@app/services/butler.service';
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons'; 
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -10,8 +11,14 @@ export class FooterComponent implements OnInit {
   faMotorcycle = faMotorcycle;  
   constructor(
     public _butler:Butler
-  ) { }
 
+  ) { }
+public go(i:number){
+  if(i==1){this._butler.one=true;this._butler.two=false;this._butler.three=false;};
+  if(i==2){this._butler.one=false;this._butler.two=true;this._butler.three=false;};
+  if(i==3){this._butler.one=false;this._butler.two=false;this._butler.three=true;};
+
+}
 public statusChange(){
   if(this._butler.bikerStatus){
     this._butler.bikerStatus=false;
@@ -39,5 +46,6 @@ public setProfile(){
 
   ngOnInit(): void {
   }
+
 
 }

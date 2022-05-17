@@ -9,6 +9,9 @@ export class Butler {
     distance:string="";
     distance2:number=0;
     duration:number=0;
+    one:boolean=true;
+    two:boolean=false;
+    three:boolean=false;
     biker:boolean=false;
     details:boolean=false;
     profile:boolean=true;
