@@ -1,20 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import {Butler} from '@app/services/butler.service';
+import { DataApiService } from '@app/services/data-api.service';
+import { Observable } from 'rxjs/internal/Observable';
 import {Router} from '@angular/router';
+import { OrderInterface } from '../../../interfaces/order-interface';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-
+  // orders: Observable<any>;
+  // order: Observable<any>;
   constructor(
    public _butler: Butler,
-   public router:Router
+   public router:Router,
+   public dataApi:DataApiService
     ) { }
-
+   public order : OrderInterface={
+    status:"new",
+    metodo:''
+  }; 
   ngOnInit(): void {
   }
+
   public minus(i:number){
   if(this._butler.cart[i].quant>0){
       this._butler.cart[i].quant=this._butler.cart[i].quant-1;
@@ -45,9 +55,28 @@ public calculate(){
 }
 public go(v:number){
   this.steep=v;
-  if(v===3){this.router.navigate(['/success']);}
+  if(v===3){
+    this.order.car=this._butler.cart;
+    this.order.total=this._butler.total;
+    
+    if(this.feedSelected==1){
+    this.order.metodo="USDT";}
+  if(this.feedSelected==2){this.order.metodo="PayPal";}
+    this.newOrder(this.order);
+  }
+
+
+
 
 }
+  public newOrder(order:any){
+    return this.dataApi.saveOrder(this.order)
+       .subscribe((order) => (
+        this.router.navigate(['/success'])
+        )
+      );
+  }
+
 public addFeed(t:number){
   if(t===1){this.feed=0.25;this.feedSelected=1;this.feedOne=true;this.feedTwo=false;}
   if(t===2){this.feed=0.28;this.feedSelected=2;this.feedTwo=true;this.feedOne=false;}
