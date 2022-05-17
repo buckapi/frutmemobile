@@ -888,7 +888,7 @@ link:string="";
   };  
   
 public toCart(i:number){
- 
+ this._butler.totalItems=this._butler.totalItems+1;
       this._butler.cart[i].oncart=true;
        this.calculate();
 

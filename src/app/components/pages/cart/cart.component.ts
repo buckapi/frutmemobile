@@ -26,11 +26,11 @@ public plus(i:number){
       this.calculate();
    }
 }public out(i:number){
-   
+    this._butler.totalItems=this._butler.totalItems-1;
       this._butler.cart[i].quant=0;
       this._butler.cart[i].oncart=false;
       this.calculate();
-   }
+   
 }
 public calculate(){
   this.total=0;

@@ -15,7 +15,7 @@
                         <span>
                             <i class="nav-icon bi bi-cart"></i>
                             <span class="nav-text">Cart</span>
-                            <span class="countercart">3</span>
+                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
                         </span>
                     </a>
                 </li>
@@ -43,7 +43,7 @@
                         <span>
                             <i class="nav-icon bi bi-cart"></i>
                             <span class="nav-text">Cart</span>
-                            <span class="countercart">3</span>
+                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
                         </span>
                     </a>
                 </li>
@@ -71,7 +71,7 @@
                         <span>
                             <i class="nav-icon bi bi-cart"></i>
                             <span class="nav-text">Cart</span>
-                            <span class="countercart">3</span>
+                            <span class="countercart" [hidden]="_butler.totalItems===0">{{_butler.totalItems}}</span>
                         </span>
                     </a>
                 </li>
