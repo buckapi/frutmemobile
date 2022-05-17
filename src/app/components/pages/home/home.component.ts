@@ -144,7 +144,7 @@ focusRemove(){
       console.log('script loaded ', data);
     }).catch(error => console.log(error));
    
-
+this._butler.cart= this.products;
  
   
 

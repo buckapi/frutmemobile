@@ -17,6 +17,7 @@ export class Butler {
     type:string="Passenger"; 
     placeholder:string="a donde deseas ir?"; 
 	  any:any[]=[]; 
+    cart:any[]=[]; 
     number:number=0;
 
     constructor() { }

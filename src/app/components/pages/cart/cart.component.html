@@ -8,19 +8,19 @@
                 <div class="col">
                     <a href="cart.html" class="wizard-link active">
                         <i class="bi bi-bag shadow-sm"></i>
-                        <span class="wizard-text">Products</span>
+                        <span class="wizard-text">Productos</span>
                     </a>
                 </div>
                 <div class="col">
                     <a href="address.html" class="wizard-link">
                         <i class="bi bi-geo-alt shadow-sm"></i>
-                        <span class="wizard-text">Address</span>
+                        <span class="wizard-text">Direccion</span>
                     </a>
                 </div>
                 <div class="col">
                     <a href="payment.html" class="wizard-link">
                         <i class="bi bi-credit-card shadow-sm"></i>
-                        <span class="wizard-text">Payment</span>
+                        <span class="wizard-text">Pago</span>
                     </a>
                 </div>
             </div>
@@ -28,32 +28,32 @@
             <!-- cart items -->
             <div class="row mb-3">
                 <div class="col align-self-center">
-                    <h5 class="mb-0">3 products in cart</h5>
+                    <h5 class="mb-0">3 Productos en el carro</h5>
                 </div>
                 <div class="col-auto pe-0 align-self-center">
-                    <a href="https://maxartkiller.com/website/gomobileux2/HTML/home" class="link text-color-theme">Shop more <i class="bi bi-chevron-right"></i></a>
+                    <a [routerLink]="['home']" class="link text-color-theme">Seguir comprando <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
             <div class="row mb-2">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" *ngFor='let product of _butler.cart'>
                     <div class="card shadow-sm product mb-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-auto">
-                                    <figure class="text-center avatar-90 avatar">
-                                        <img src="assets/assetsfrut/img/product1.png" alt="">
+                                    <figure class="text-center avatar-90 avatar" style="background-color:white;">
+                                        <img src="{{product.img}}" alt="">
                                     </figure>
                                 </div>
                                 <div class="col ps-0">
                                     <p class="mb-0">
-                                        <small class="text-opac">Fresh</small>
-                                        <small class="float-end"><i class="bi bi-star-fill text-warning"></i> <span
-                                                class="text-opac">4.0 (165 Reviews)</span></small>
+                                        <small class="text-opac"></small>
+                                        <small class="float-end"><i class="bi bi-trash text-warning"></i> <span
+                                                class="text-opac">sacar</span></small>
                                     </p>
-                                    <h6 class="text-color-theme">Apple</h6>
+                                    <h6 class="text-color-theme">{{product.name}}</h6>
                                     <div class="row">
                                         <div class="col">
-                                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
+                                            <p class="mb-0"> {{currency}} {{(product.costPrice+(product.costPrice*product.perc/100))/precioDolar | number:'1.2-2' }}<br><small class="text-opac">por 1 {{product.presentation}}</small></p>
                                         </div>
                                         <div class="col-auto">
                                             <div class="counter-number">
@@ -72,154 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow-sm product mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <figure class="text-center avatar-90 avatar">
-                                        <img src="assets/assetsfrut/img/product2.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="col ps-0">
-                                    <p class="mb-0">
-                                        <small class="text-opac">Protein</small>
-                                        <small class="float-end"><i class="bi bi-star-fill text-warning"></i> <span
-                                                class="text-opac">4.0 (165 Reviews)</span></small>
-                                    </p>
-                                    <h6 class="text-color-theme">Banana</h6>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="counter-number">
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-dash size-22"></i>
-                                                </button>
-                                                <span>1</span>
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-plus size-22"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow-sm product mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <figure class="text-center avatar-90 avatar">
-                                        <img src="assets/assetsfrut/img/product3.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="col ps-0">
-                                    <p class="mb-0">
-                                        <small class="text-opac">Healthy</small>
-                                        <small class="float-end"><i class="bi bi-star-fill text-warning"></i> <span
-                                                class="text-opac">4.0 (165 Reviews)</span></small>
-                                    </p>
-                                    <h6 class="text-color-theme">Watermelon</h6>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="counter-number">
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-dash size-22"></i>
-                                                </button>
-                                                <span>1</span>
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-plus size-22"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow-sm product mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <figure class="text-center avatar-90 avatar">
-                                        <img src="assets/assetsfrut/img/product3.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="col ps-0">
-                                    <p class="mb-0">
-                                        <small class="text-opac">Healthy</small>
-                                        <small class="float-end"><i class="bi bi-star-fill text-warning"></i> <span
-                                                class="text-opac">4.0 (165 Reviews)</span></small>
-                                    </p>
-                                    <h6 class="text-color-theme">Watermelon</h6>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="counter-number">
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-dash size-22"></i>
-                                                </button>
-                                                <span>1</span>
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-plus size-22"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card shadow-sm product mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <figure class="text-center avatar-90 avatar">
-                                        <img src="assets/assetsfrut/img/product3.png" alt="">
-                                    </figure>
-                                </div>
-                                <div class="col ps-0">
-                                    <p class="mb-0">
-                                        <small class="text-opac">Healthy</small>
-                                        <small class="float-end"><i class="bi bi-star-fill text-warning"></i> <span
-                                                class="text-opac">4.0 (165 Reviews)</span></small>
-                                    </p>
-                                    <h6 class="text-color-theme">Watermelon</h6>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="mb-0">$12.00<br><small class="text-opac">per 1 kg</small></p>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="counter-number">
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-dash size-22"></i>
-                                                </button>
-                                                <span>1</span>
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
-                                                    <i class="bi bi-plus size-22"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
 
             <!-- pricing -->
