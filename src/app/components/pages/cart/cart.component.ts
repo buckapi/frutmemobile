@@ -25,6 +25,12 @@ public plus(i:number){
       this._butler.cart[i].quant=this._butler.cart[i].quant+1;
       this.calculate();
    }
+}public out(i:number){
+   
+      this._butler.cart[i].quant=0;
+      this._butler.cart[i].oncart=false;
+      this.calculate();
+   }
 }
 public calculate(){
   this.total=0;

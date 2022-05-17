@@ -9,6 +9,7 @@ export class Butler {
     distance:string="";
     distance2:number=0;
     total:number=0;
+    totalItems:number=0;
     duration:number=0;
     one:boolean=true;
     two:boolean=false;
