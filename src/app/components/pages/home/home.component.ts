@@ -35,7 +35,39 @@ const PRODUCTS: Product[] = [
     costPrice: 1,
     perc: 30,
     presentation:'Kg'
-  }
+  },
+   {
+     id: 3,
+    name: 'Pata de Res',
+    img: 'assets/products/patares.jpg',
+    costPrice: 15,
+    perc: 30,
+    presentation:'Kg'
+  },
+   {
+     id: 4,
+    name: 'Auyama',
+    img: 'assets/products/auyama.jpg',
+    costPrice: 3,
+    perc: 30,
+    presentation:'Kg'
+  },
+   {
+     id: 5,
+    name: 'Cafe',
+    img: 'assets/products/cafe.jpg',
+    costPrice: 20,
+    perc: 30,
+    presentation:'500g'
+  },
+   {
+     id: 6,
+    name: 'Piña',
+    img: 'assets/products/piña.jpg',
+    costPrice: 6,
+    perc: 30,
+    presentation:'Und'
+  },
 ];
 
 declare var $: any;
