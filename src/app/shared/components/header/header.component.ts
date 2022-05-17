@@ -4,7 +4,6 @@ import { Butler } from '@app/services/butler.service';
 import { ScriptService } from '@app/services/script.service';
 import { ScriptStore } from '@app/services/script.store';
 import { SwiperOptions } from 'swiper';
-import { BikersService } from '@app/services';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -18,7 +17,7 @@ export class HeaderComponent implements AfterViewInit {
     public script:ScriptService,
     public router:Router
   ) { }
-
+ currency = "USD";
   config: SwiperOptions = {
     a11y: { enabled: true },
     direction: 'horizontal',
@@ -48,6 +47,6 @@ export class HeaderComponent implements AfterViewInit {
   }
   ngAfterViewInit(): void {
       }
-  currency = "USD";
+ 
 
 }

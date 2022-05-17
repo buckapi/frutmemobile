@@ -927,7 +927,7 @@ focusRemove(){
 }
 public calculate(){
   this.total=0;
-  for(let i=0;i<=this._butler.cart.length;i++){
+  for(let i=0;i<this._butler.cart.length;i++){
     this.total=this.total+(this._butler.cart[i].quant*((this._butler.cart[i].costPrice)+(this._butler.cart[i].costPrice*this._butler.cart[i].perc/100))/this.precioDolar);
    this._butler.total=this.total;
   }
@@ -936,23 +936,24 @@ total=0;
 
   ngAfterViewInit(): void {
 
-     this.script.load(
-    'jquery',
-    'popper',
-    'bootstrap-5',
-    'cookie',
-    'swiper',
-    'pwa-services',
-    'nouislider',
-    'main',
-    'color-scheme',
-    'app')
-    .then(data => {
-      console.log('script loaded ', data);
-    }).catch(error => console.log(error));
+    this.script.load(
+      'jquery',
+      'popper',
+      'bootstrap-5',
+      'cookie',
+      'swiper',
+      'pwa-services',
+      'nouislider',
+      'main',
+      'color-scheme',
+      'app')
+      .then(data => {console.log('script loaded ', data);}).catch(error => console.log(error));
    
-this._butler.cart= this.products;
+   setTimeout(() => {
+      this._butler.cart= this.products;
  
+    }, 1000);
+
   
 
   }
