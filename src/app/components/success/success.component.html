@@ -10,15 +10,17 @@
                       
                         <p class="text-center" 
                         [hidden]="_butler.metodo!=1">
-<span style="font-weight:900;">
-    
-                        {{paymentAddress}}
-</span>
-                    </p>
-
+                            <span style="font-weight:900;">
+                                {{paymentAddress}}
+                            </span>
+                        </p>
+                        <p class="text-center" 
+                            [hidden]="_butler.metodo!=1">
+                            RED
+                        </p>
+                        <h2 class="text-center"  [hidden]="_butler.metodo!=1">{{red}}</h2>
                     </div>
                 </div>
-
             </div>
            <!--  <div class="col-12 text-center align-self-end py-2">
                 <div class="row">
