@@ -8,7 +8,13 @@
                         <h2 class="text-center">Pedido registrado con exito!</h2>
                         <p class=" mb-4">{{mensaje}}</p>
                       
-                        <h2 class="text-center" [hidden]="_butler.metodo!=1">{{paymentAddress}}</h2>
+                        <p class="text-center" 
+                        [hidden]="_butler.metodo!=1">
+<span style="font-weight:900;">
+    
+                        {{paymentAddress}}
+</span>
+                    </p>
 
                     </div>
                 </div>
