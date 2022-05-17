@@ -48,6 +48,6 @@ export class HeaderComponent implements AfterViewInit {
   }
   ngAfterViewInit(): void {
       }
-  
+  currency = "USD";
 
 }

@@ -11,10 +11,10 @@
                        
                     </div>
                 </div>
-                <!-- <div class="col-auto align-self-center">
-                    <a href="profile.html" class="link text-color-theme">
-                        <i class="bi bi-person-circle size-22"></i>
+                <div class="col-auto align-self-center" [hidden]="_butler.total===0">
+                    <a class="link text-dark">
+                       {{currency}} {{_butler.total | number:'1.2-2' }}
                     </a>
-                </div> -->
+                </div>
             </div>
         </header>

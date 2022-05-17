@@ -360,7 +360,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-3" *ngFor='let product of products'>
+                <div class="col-6 col-md-4 col-lg-3" *ngFor='let product of _butler.cart;let i = index' [hidden]="product.oncart" >
                     <div class="card shadow-sm product mb-4">
                         <div class="card-body">
                             <figure class="text-center">
@@ -377,16 +377,16 @@
                                 <div class="">
                                     <div class="counter-number">
                                       
-                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle" (click)="minus(i)">
                                             <i class="bi bi-dash size-22"></i>
                                         </button>
-                                        <span>1</span>
-                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                        <span>{{product.quant}}</span>
+                                        <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle" (click)="plus(i)">
                                             <i class="bi bi-plus size-22"></i>
                                         </button>
                                          <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle shadow btn-gradient"
-                                        data-bs-toggle="modal" data-bs-target="#addproductcart" style="margin-left: 6px;">
-                                        <i class="bi bi-check size-22" style="color: #fff;"></i>
+                                        style="margin-left: 6px;"[hidden]="product.quant===0"  (click)="toCart(i)">
+                                        <i class="bi bi-check size-22" style="color: #fff;"  ></i>
                                     </button>
                                     </div>
                                     

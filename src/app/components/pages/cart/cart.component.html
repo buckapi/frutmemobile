@@ -2,7 +2,23 @@
 
       
         <!-- main page content -->
-        <div class="main-container container top-20">
+        <div class="main-container container top-20" [hidden]="_butler.total>0">
+            <!-- wizard links -->
+    
+
+            <!-- cart items -->
+            <div class="row mb-3 mt-4">
+                <div class="col-auto pe-0 align-self-center">
+                    <a [routerLink]="['home']" class="link text-color-theme"><i class="bi bi-chevron-left"></i>Comprar </a>
+                </div>
+                <div class="col align-self-center">
+                    <h5 class="mb-0">Aún no tienes productos en el carrito</h5>
+                </div>
+            </div>
+        
+
+        </div>
+        <div class="main-container container top-20" [hidden]="_butler.total===0">
             <!-- wizard links -->
             <div class="row justify-content-between wizard-wrapper mb-4 shadow-sm">
                 <div class="col">
@@ -35,7 +51,7 @@
                 </div>
             </div>
             <div class="row mb-2">
-                <div class="col-12 col-md-6 col-lg-4" *ngFor='let product of _butler.cart'>
+                <div class="col-12 col-md-6 col-lg-4" *ngFor='let product of _butler.cart ;let i = index'  [hidden]="!product.oncart"  >
                     <div class="card shadow-sm product mb-3">
                         <div class="card-body">
                             <div class="row">
@@ -53,15 +69,15 @@
                                     <h6 class="text-color-theme">{{product.name}}</h6>
                                     <div class="row">
                                         <div class="col">
-                                            <p class="mb-0"> {{currency}} {{(product.costPrice+(product.costPrice*product.perc/100))/precioDolar | number:'1.2-2' }}<br><small class="text-opac">por 1 {{product.presentation}}</small></p>
+                                            <p class="mb-0"> {{currency}} {{((product.costPrice+(product.costPrice*product.perc/100))/precioDolar)*product.quant | number:'1.2-2' }}<br><small class="text-opac">por {{product.quant}} {{product.presentation}}</small></p>
                                         </div>
                                         <div class="col-auto">
                                             <div class="counter-number">
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle" (click)="minus(i)">
                                                     <i class="bi bi-dash size-22"></i>
                                                 </button>
-                                                <span>1</span>
-                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
+                                                <span>{{product.quant}}</span>
+                                                <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle" (click)="plus(i)">
                                                     <i class="bi bi-plus size-22"></i>
                                                 </button>
                                             </div>
@@ -78,21 +94,21 @@
             <!-- pricing -->
             <div class="row mb-3">
                 <div class="col align-self-center">
-                    <h5 class="mb-0">Pricing</h5>
+                    <h5 class="mb-0">Costos</h5>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <p>Shipping Cost</p>
+                    <p>Delivery</p>
                 </div>
-                <div class="col-auto">$ 10.00</div>
+                <div class="col-auto">$ 0.00</div>
             </div>
 
             <div class="row mb-3">
                 <div class="col">
                     <p>Subtotal</p>
                 </div>
-                <div class="col-auto">$ 32.00</div>
+                <div class="col-auto">{{currency}} {{_butler.total | number:'1.2-2'}}</div>
             </div>
 
             <div class="row fw-bold mb-4">
@@ -102,13 +118,13 @@
                 <div class="col">
                     <p>Total</p>
                 </div>
-                <div class="col-auto">$ 42.00</div>
+                <div class="col-auto">{{currency}} {{_butler.total | number:'1.2-2'}}</div>
             </div>
 
             <!-- Button -->
             <div class="row mb-3">
                 <div class="col align-self-center d-grid">
-                    <a href="address.html" class="btn btn-default btn-lg shadow-sm">Next</a>
+                    <a href="address.html" class="btn btn-default btn-lg shadow-sm">Siguiente</a>
                 </div>
             </div>
 
