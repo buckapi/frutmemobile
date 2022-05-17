@@ -22,6 +22,7 @@ export class SuccessComponent implements OnInit {
     }
   }
   paymentAddress="";
+  red="BNB Smart Chain (BEP20)";
   mensaje="Su pedido ha sido registrado exitosamente, en breve le contactaremos. Gracias por preferirnos";
 
 }
