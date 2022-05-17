@@ -21,12 +21,12 @@ export class AppComponent implements OnInit {
       'jquery',
       'popper',
       'bootstrap-5',
+      'cookie',
+      'swiper',
+      'pwa-services',
+      'nouislider',
       'main',
       'color-scheme',
-      'pwa-services',
-      'chart-js',
-      'progressbar',
-      'swiper',
       'app')
       .then(data => {console.log('script loaded ', data);}).catch(error => console.log(error));
     
