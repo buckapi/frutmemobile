@@ -39,7 +39,7 @@ const PRODUCTS: Product[] = [
    {
      id: 3,
     name: 'Pata de Res',
-    img: 'assets/products/patares.jpg',
+    img: 'assets/products/patasres.jpg',
     costPrice: 15,
     perc: 30,
     presentation:'Kg'
