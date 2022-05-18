@@ -52,7 +52,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Pata de Res',
     img: 'assets/products/patasres.jpg',
-    costPrice: 18,
+    costPrice: 15,
     perc: 30,
     presentation:'Kg'
   },
@@ -74,9 +74,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Cafe',
     img: 'assets/products/cafe.jpg',
-    costPrice: 20,
+    costPrice: 8.50,
     perc: 30,
-    presentation:'500g'
+    presentation:'250g'
   },
    {
      id: 6,
@@ -193,7 +193,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Costilla de res',
     img: 'assets/products/costilla.jpg',
-    costPrice: 18,
+    costPrice: 15,
     perc: 30,
     presentation:'kg'
   },
@@ -240,7 +240,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Aji dulce',
     img: 'assets/products/ajisdulce.jpg',
-    costPrice: 15,
+    costPrice: 5,
     perc: 30,
     presentation:'250 g'
   },
@@ -251,7 +251,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Ajo',
     img: 'assets/products/ajo.jpg',
-    costPrice: 14,
+    costPrice: 12 ,
     perc: 30,
     presentation:'250 g'
   },
@@ -680,7 +680,7 @@ const PRODUCTS: Product[] = [
      quant:0,
      cat:'frutas',
     name: 'Platano amarillo',
-    img: 'assets/products/platanosverdes.jpg',
+    img: 'assets/products/amarillo.jpg',
     costPrice: 5,
     perc: 30,
     presentation:'kg'
