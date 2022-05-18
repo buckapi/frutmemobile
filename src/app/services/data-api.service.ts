@@ -8,14 +8,19 @@ import { Butler } from "./butler.service";
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataApiService {
+
 	
 
 
   constructor(
   	public _butler:Butler,
   	private http: HttpClient
-  	) {}
+  	) {
+
+
+  }
 
   	// headers : HttpHeaders = new HttpHeaders({
   	// 	"Content-Type":"application/json",
@@ -27,7 +32,16 @@ export class DataApiService {
 		.post<OrderInterface>(url_api, order)
 		.pipe(map(data => data));
 	}
+getOrderByNpedido(npedido: string){
 
+		const url_api = `https://db.bbevolutionbank.com:3025/api/order?filter[where][npedido]=${npedido}`;
+		return this.http.get(url_api);
+	
+
+		// return this.http.get(url_api);
+
+		// return this.http.get(url_api);
+	}
 
 
 }

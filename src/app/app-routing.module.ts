@@ -9,6 +9,7 @@ const routes: Routes = [
 { path: 'cart', loadChildren: () => import('./components/pages/cart/cart.module').then(m => m.CartModule) },
 { path: 'categories', loadChildren: () => import('./components/pages/categories.module').then(m => m.CategoriesModule) },
 { path: 'success', loadChildren: () => import('./components/success/success.module').then(m => m.SuccessModule) },
+{ path: 'order', loadChildren: () => import('./components/pages/order/order.module').then(m => m.OrderModule) },
  { path:'**',pathMatch:'full',redirectTo:'home'}
 ];
 
