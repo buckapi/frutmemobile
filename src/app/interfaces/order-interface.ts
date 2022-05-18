@@ -4,6 +4,7 @@ export interface OrderInterface{
 	direccion?:string;	 
 	email?:string;
 	metodo?:string;
+	npedido?:string;
 	pago?:string;
 	personaContacto?:string;
 	status?:string;
