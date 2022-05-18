@@ -7,18 +7,22 @@
                         <img src="assets/assetsfrut/img/thankyou2.png" alt="Logo" class="mw-100">
                         <h2 class="text-center">Pedido registrado con exito!</h2>
                         <p class=" mb-4">{{mensaje}}</p>
-                      
+                      <p class="text-center" 
+                            [hidden]="_butler.metodo!=1" style="font-weight:900;">
+                            Wallet: 
+                        </p>
                         <p class="text-center" 
                         [hidden]="_butler.metodo!=1">
-                            <span style="font-weight:900;">
+                            <span >
                                 {{paymentAddress}}
                             </span>
                         </p>
                         <p class="text-center" 
-                            [hidden]="_butler.metodo!=1">
-                            RED
+                            [hidden]="_butler.metodo!=1" style="font-weight:900;">
+                            RED: 
                         </p>
-                        <h2 class="text-center"  [hidden]="_butler.metodo!=1">{{red}}</h2>
+
+                        <p class="text-center"  [hidden]="_butler.metodo!=1">{{red}}</p>
                     </div>
                 </div>
             </div>
