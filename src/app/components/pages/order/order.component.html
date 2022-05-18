@@ -29,16 +29,15 @@
                                 <div class="col ps-0">
                                     <p class="mb-0">
                                         <small class="text-opac"></small>
-                                        <small class="float-end" ><i class="bi bi-trash text-warning"></i> <span
-                                                class="text-opac">sacar</span></small>
+                                         Bs {{((product.costPrice+(product.costPrice*product.perc/100))) | number:'1.2-2' }}
                                     </p>
                                     <h6 class="text-color-theme">{{product.name}}</h6>
                                     <div class="row">
                                         <div class="col">
-                                            <p class="mb-0"> {{currency}} {{((product.costPrice+(product.costPrice*product.perc/100))/precioDolar)*product.quant | number:'1.2-2' }}<br><small class="text-opac">por {{product.quant}} {{product.presentation}}</small></p>
+                                            <p class="mb-0"> {{currency}} {{((product.costPrice+(product.costPrice*product.perc/100))/precioDolar)*product.quant | number:'1.2-2' }}<br><small class="text-opac">Cant {{product.quant}} ({{product.presentation}})</small></p>
                                         </div>
                                         <div class="col-auto">
-                                            <div class="counter-number">
+                                            <!-- <div class="counter-number">
                                                 <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle" >
                                                     <i class="bi bi-dash size-22"></i>
                                                 </button>
@@ -46,7 +45,7 @@
                                                 <button class="btn btn-sm avatar avatar-30 p-0 rounded-circle">
                                                     <i class="bi bi-plus size-22"></i>
                                                 </button>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -76,7 +75,7 @@
                 <div class="col">
                     <p>Subtotal</p>
                 </div>
-                <div class="col-auto">{{currency}} {{_butler.total | number:'1.2-2'}}</div>
+                <div class="col-auto">{{currency}} {{_butler.orderSelected[0] | number:'1.2-2'}}</div>
             </div>
 
             <div class="row fw-bold mb-4">
@@ -86,7 +85,7 @@
                 <div class="col">
                     <p>Total</p>
                 </div>
-                <div class="col-auto">{{currency}} {{_butler.total | number:'1.2-2'}}</div>
+                <div class="col-auto">{{currency}} {{_butler.orderSelected[0] | number:'1.2-2'}}</div>
             </div>
 
             <!-- Button -->
