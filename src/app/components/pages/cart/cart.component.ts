@@ -20,8 +20,7 @@ export class CartComponent implements OnInit {
     ) { }
    public order : OrderInterface={
     status:"new",
-    metodo:'',
-    npedido:''
+    metodo:''
   }; 
   ngOnInit(): void {
   }
