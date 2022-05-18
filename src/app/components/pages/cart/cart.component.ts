@@ -72,7 +72,7 @@ public go(v:number){
     this.newOrder(this.order);
   }
 }
- public aleatorio(a,b) {
+ public aleatorio(a:any,b:any) {
     return Math.round(Math.random()*(b-a)+parseInt(a));
   }
   public newOrder(order:any){
