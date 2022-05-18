@@ -5,14 +5,14 @@
                 <div class="row h-100">
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto align-self-center">
                         <img src="assets/assetsfrut/img/thankyou2.png" alt="Logo" class="mw-100">
-                        <h2 class="text-center">Pedido registrado con exito!</h2>
+                        <h2 class="text-center">Pedido # {{_butler.npedido}}</h2>
                         <p class=" mb-4">{{mensaje}}</p>
                         <p class="text-center" 
                             [hidden]="_butler.metodo!=1" style="font-weight:900;">
                             Monto: 
                         </p>
 
-                        <p class="text-center"  [hidden]="_butler.metodo!=1">{{_butler.total}}</p>
+                        <p class="text-center"  [hidden]="_butler.metodo!=1">USDT {{_butler.total | number:'1.2-2' }} </p>
                       <p class="text-center" 
                             [hidden]="_butler.metodo!=1" style="font-weight:900;">
                             Wallet: 

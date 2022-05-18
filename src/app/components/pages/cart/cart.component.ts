@@ -20,7 +20,8 @@ export class CartComponent implements OnInit {
     ) { }
    public order : OrderInterface={
     status:"new",
-    metodo:''
+    metodo:'',
+    npedido:''
   }; 
   ngOnInit(): void {
   }
@@ -64,6 +65,10 @@ public go(v:number){
     this.order.metodo="USDT";}
   if(this.feedSelected==2){this.order.metodo="PayPal";
   this._butler.metodo=2;}
+  this.npedido=this.aleatorio(10000,99999);
+      let npedidoString = this.npedido.toString();
+      this.order.npedido=npedidoString;
+      this._butler.npedido=npedidoString;
     this.newOrder(this.order);
   }
 
@@ -93,5 +98,6 @@ steep=1;
 total=0;
 precioDolar= 5;
 currency = "USD";
+  npedido=0;
 
 }

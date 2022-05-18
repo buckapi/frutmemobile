@@ -7,6 +7,7 @@ export class Butler {
     vector:any={};       
     string:string=""; 
     distance:string="";
+    npedido:string="";
     distance2:number=0;
     metodo:number=0;
     total:number=0;
