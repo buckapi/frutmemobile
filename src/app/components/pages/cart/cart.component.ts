@@ -70,11 +70,10 @@ public go(v:number){
       this._butler.npedido=npedidoString;
     this.newOrder(this.order);
   }
-
-
-
-
 }
+ public aleatorio(a,b) {
+    return Math.round(Math.random()*(b-a)+parseInt(a));
+  }
   public newOrder(order:any){
     return this.dataApi.saveOrder(this.order)
        .subscribe((order) => (
