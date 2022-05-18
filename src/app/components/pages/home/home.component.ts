@@ -879,8 +879,8 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 10$',
     img: 'assets/products/gif1.jpg',
-    costPrice: 53,
-    perc: 30,
+    costPrice: 50,
+    perc: 0,
     presentation:'Und'
   },
    {
@@ -890,8 +890,8 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 25$',
     img: 'assets/products/gif2.jpg',
-    costPrice: 110,
-    perc: 30,
+    costPrice: 125,
+    perc: 0,
     presentation:'Und'
   },
   {
@@ -901,8 +901,8 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 50$',
     img: 'assets/products/gif3.jpg',
-    costPrice: 270,
-    perc: 30,
+    costPrice: 250,
+    perc: 0,
     presentation:'Und'
   },
   {
@@ -1089,7 +1089,7 @@ total=0;
   
 
   }
-precioDolar= 5.3;
+precioDolar= 5;
 currency = "USD";
   products = PRODUCTS;
 }

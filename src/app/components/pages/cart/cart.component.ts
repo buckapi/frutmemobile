@@ -80,7 +80,7 @@ public go(v:number){
   }
 
 public addFeed(t:number){
-  if(t===1){this.feed=0.18;this.feedSelected=1;this.feedOne=true;this.feedTwo=false;}
+  if(t===1){this.feed=0.17;this.feedSelected=1;this.feedOne=true;this.feedTwo=false;}
   if(t===2){this.feed=0.20;this.feedSelected=2;this.feedTwo=true;this.feedOne=false;}
     this.calculate();
 }
