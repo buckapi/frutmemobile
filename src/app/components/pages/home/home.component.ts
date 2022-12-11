@@ -901,7 +901,7 @@ const PRODUCTS: Product[] = [
     img: 'assets/products/gif1.jpg',
     costPrice: 180,
     perc: 0,
-    presentation:'18Und0'
+    presentation:'Und'
   },
    {
      id: 78,
