@@ -899,9 +899,9 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 10$',
     img: 'assets/products/gif1.jpg',
-    costPrice: 50,
+    costPrice: 180,
     perc: 0,
-    presentation:'180'
+    presentation:'18Und0'
   },
    {
      id: 78,
