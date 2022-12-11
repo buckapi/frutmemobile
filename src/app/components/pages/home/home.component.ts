@@ -30,9 +30,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Axion',
     img: 'assets/products/axion.png',
-    costPrice: 29,
+    costPrice: 54,
     perc: 30,
-    presentation:'235g'
+    presentation:'450g'
   },   {
      id: 1,
      oncart: false,
@@ -135,9 +135,9 @@ const PRODUCTS: Product[] = [
      cat:'cuidado',
     name: 'papel higienico',
     img: 'assets/products/papelhigienico.jpg',
-    costPrice: 15,
+    costPrice: 45,
     perc: 30,
-    presentation:'6 rollos'
+    presentation:'8 rollos'
   },
 
    {
@@ -195,9 +195,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Lentejas',
     img: 'assets/products/lentejas.jpg',
-    costPrice: 12,
+    costPrice: 25,
     perc: 30,
-    presentation:'kg'
+    presentation:'500g'
   },
 
    {
@@ -207,9 +207,9 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Leche en polvo',
     img: 'assets/products/lechelacampesina.jpg',
-    costPrice: 145,
+    costPrice: 121,
     perc: 30,
-    presentation:'1 Kg'
+    presentation:'900g'
   },
 
 
@@ -322,9 +322,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Arvejas',
     img: 'assets/products/arvejas.jpg',
-    costPrice: 12,
+    costPrice: 18,
     perc: 30,
-    presentation:'kg'
+    presentation:'500g'
   },
   {
      id: 25,
@@ -399,9 +399,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Caraotas',
     img: 'assets/products/caraotas.jpg',
-    costPrice: 10,
+    costPrice: 20.5,
     perc: 30,
-    presentation:'kg'
+    presentation:'500g'
   },
   {
      id: 29,
@@ -465,7 +465,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Cereal',
     img: 'assets/products/cereal.jpg',
-    costPrice: 40,
+    costPrice: 30,
     perc: 30,
     presentation:'350 g'
   },
@@ -612,7 +612,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Limones',
     img: 'assets/products/limon.jpg',
-    costPrice: 10,
+    costPrice: 20,
     perc: 30,
     presentation:'kg'
   },
@@ -656,7 +656,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Parchita',
     img: 'assets/products/parchita.jpg',
-    costPrice: 15,
+    costPrice: 22,
     perc: 30,
     presentation:'Kg'
   },{
@@ -821,7 +821,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Yuca',
     img: 'assets/products/yucas.jpg',
-    costPrice: 12,
+    costPrice: 18,
     perc: 30,
     presentation:'kg'
   },
