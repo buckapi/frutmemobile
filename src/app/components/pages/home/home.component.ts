@@ -1098,7 +1098,7 @@ total=0;
   
 
   }
-precioDolar= 18.6;
+precioDolar= 18;
 currency = "USD";
   products = PRODUCTS;
 }
