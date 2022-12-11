@@ -95,7 +95,7 @@ feedTwo=false;
 feed=0;
 steep=1;
 total=0;
-precioDolar= 5;
+precioDolar= 18.6;
 currency = "USD";
   npedido=0;
 

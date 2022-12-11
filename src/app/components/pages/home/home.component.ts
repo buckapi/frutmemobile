@@ -376,6 +376,17 @@ const PRODUCTS: Product[] = [
      oncart: false,
      quant:0,
      cat:'carnes',
+    name: 'Pabilo',
+    img: 'assets/products/pabilo.png',
+    costPrice: 26,
+    perc: 30,
+    presentation:'kg'
+  },
+  {
+     id: 26,
+     oncart: false,
+     quant:0,
+     cat:'carnes',
     name: 'Muslo',
     img: 'assets/products/muslos.png',
     costPrice: 26,
