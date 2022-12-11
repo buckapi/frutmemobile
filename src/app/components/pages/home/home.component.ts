@@ -256,7 +256,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Aguacate',
     img: 'assets/products/aguacate.jpg',
-    costPrice: 6,
+    costPrice: 17,
     perc: 30,
     presentation:'kg'
   },
@@ -278,7 +278,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Ajo',
     img: 'assets/products/ajo.jpg',
-    costPrice: 12 ,
+    costPrice: 25 ,
     perc: 30,
     presentation:'250 g'
   },
@@ -333,7 +333,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Azucar',
     img: 'assets/products/azucar.jpg',
-    costPrice: 7,
+    costPrice: 20,
     perc: 30,
     presentation:'kg'
   },
@@ -645,7 +645,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Papa',
     img: 'assets/products/papas.jpg',
-    costPrice: 12,
+    costPrice: 16,
     perc: 30,
     presentation:'kg  '
   },
@@ -834,7 +834,7 @@ const PRODUCTS: Product[] = [
     img: 'assets/products/piña.jpg',
     costPrice: 12,
     perc: 30,
-    presentation:'kg'
+    presentation:'Und'
   },
   {
      id: 71,
