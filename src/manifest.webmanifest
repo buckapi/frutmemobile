@@ -1,8 +1,8 @@
 {
   "name": "FrutmeSuper",
   "short_name": "FrutmeSuper",
-  "theme_color": "#000000",
-  "background_color": "#fdac20",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "fullscreen",
   "scope": "./",
   "start_url": "./",
