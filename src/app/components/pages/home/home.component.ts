@@ -28,6 +28,56 @@ const PRODUCTS: Product[] = [
      oncart: false,
      quant:0,
      cat:'frutas',
+    name: 'Axion',
+    img: 'assets/products/axion.png',
+    costPrice: 18,
+    perc: 30,
+    presentation:'Kg'
+  },   {
+     id: 1,
+     oncart: false,
+     quant:0,
+     cat:'frutas',
+    name: 'Pasas',
+    img: 'assets/products/pasas.jpg',
+    costPrice: 18,
+    perc: 30,
+    presentation:'Kg'
+  },   {
+     id: 1,
+     oncart: false,
+     quant:0,
+     cat:'frutas',
+    name: 'Hojas',
+    img: 'assets/products/hojas.jpg',
+    costPrice: 18,
+    perc: 30,
+    presentation:'Kg'
+  }, {
+     id: 1,
+     oncart: false,
+     quant:0,
+     cat:'frutas',
+    name: 'Alcaparras',
+    img: 'assets/products/alcaparras.png',
+    costPrice: 18,
+    perc: 30,
+    presentation:'Kg'
+  }, {
+     id: 1,
+     oncart: false,
+     quant:0,
+     cat:'frutas',
+    name: 'Aceitunas',
+    img: 'assets/products/Aceitunas.jpg',
+    costPrice: 18,
+    perc: 30,
+    presentation:'Kg'
+  }, {
+     id: 1,
+     oncart: false,
+     quant:0,
+     cat:'frutas',
     name: 'Tomates',
     img: 'assets/products/tomates.jpg',
     costPrice: 18,
@@ -315,8 +365,30 @@ const PRODUCTS: Product[] = [
      oncart: false,
      quant:0,
      cat:'carnes',
+    name: 'Cerdo pulpo',
+    img: 'assets/products/cerdo.png',
+    costPrice: 26,
+    perc: 30,
+    presentation:'kg'
+  },
+  {
+     id: 26,
+     oncart: false,
+     quant:0,
+     cat:'carnes',
+    name: 'Muslo',
+    img: 'assets/products/muslos.png',
+    costPrice: 26,
+    perc: 30,
+    presentation:'kg'
+  },
+  {
+     id: 26,
+     oncart: false,
+     quant:0,
+     cat:'carnes',
     name: 'Carne Bistek',
-    img: 'assets/products/bistec.jpg',
+    img: 'assets/products/bistec.png',
     costPrice: 26,
     perc: 30,
     presentation:'kg'
@@ -349,7 +421,7 @@ const PRODUCTS: Product[] = [
      quant:0,
      cat:'carnes',
     name: 'Lagarto molido',
-    img: 'assets/products/carnemolida.jpg',
+    img: 'assets/products/lagartomolido.png',
     costPrice: 25,
     perc: 30,
     presentation:'kg'
@@ -359,8 +431,8 @@ const PRODUCTS: Product[] = [
      oncart: false,
      quant:0,
      cat:'carnes',
-    name: 'Lagarto en trozos',
-    img: 'assets/products/carnetrosos.jpg',
+    name: 'Lagarto picado',
+    img: 'assets/products/lagartopicado.png',
     costPrice: 25,
     perc: 30,
     presentation:'kg'
