@@ -30,9 +30,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Axion',
     img: 'assets/products/axion.png',
-    costPrice: 18,
+    costPrice: 29,
     perc: 30,
-    presentation:'Kg'
+    presentation:'235g'
   },   {
      id: 1,
      oncart: false,
@@ -40,9 +40,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Pasas',
     img: 'assets/products/pasas.jpg',
-    costPrice: 18,
+    costPrice: 6.5,
     perc: 30,
-    presentation:'Kg'
+    presentation:'100g'
   },   {
      id: 1,
      oncart: false,
@@ -50,9 +50,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Hojas',
     img: 'assets/products/hojas.jpg',
-    costPrice: 18,
+    costPrice: 35,
     perc: 30,
-    presentation:'Kg'
+    presentation:'Pqt'
   }, {
      id: 1,
      oncart: false,
@@ -60,9 +60,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Alcaparras',
     img: 'assets/products/alcaparras.png',
-    costPrice: 18,
+    costPrice: 8.5,
     perc: 30,
-    presentation:'Kg'
+    presentation:'100g'
   }, {
      id: 1,
      oncart: false,
@@ -70,9 +70,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Aceitunas',
     img: 'assets/products/Aceitunas.jpg',
-    costPrice: 18,
+    costPrice: 8.5,
     perc: 30,
-    presentation:'Kg'
+    presentation:'100g'
   }, {
      id: 1,
      oncart: false,
@@ -91,7 +91,7 @@ const PRODUCTS: Product[] = [
     cat:'frutas',
     name: 'Cambur amarillo',
     img: 'assets/products/bananos.jpg',
-    costPrice: 2,
+    costPrice: 5,
     perc: 30,
     presentation:'Kg'
   },
@@ -102,7 +102,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Pata de Res',
     img: 'assets/products/patasres.jpg',
-    costPrice: 15,
+    costPrice: 39,
     perc: 30,
     presentation:'Kg'
   },
@@ -113,7 +113,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Auyama',
     img: 'assets/products/auyama.jpg',
-    costPrice: 3,
+    costPrice: 10,
     perc: 30,
     presentation:'Kg'
   },
@@ -124,7 +124,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Cafe',
     img: 'assets/products/cafe.jpg',
-    costPrice: 8.50,
+    costPrice: 40,
     perc: 30,
     presentation:'250g'
   },
@@ -159,7 +159,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Naranjas',
     img: 'assets/products/naranjas.jpg',
-    costPrice: 6,
+    costPrice: 5,
     perc: 30,
     presentation:'kg'
   },
@@ -171,7 +171,7 @@ const PRODUCTS: Product[] = [
      cat:'snacks',
     name: 'Chocolate',
     img: 'assets/products/chocolate.jpg',
-    costPrice: 8,
+    costPrice: 18,
     perc: 30,
     presentation:'Und P.'
   },
@@ -183,7 +183,7 @@ const PRODUCTS: Product[] = [
      cat:'limpieza',
     name: 'Jabon lava platos',
     img: 'assets/products/lavalosa.jpg',
-    costPrice: 7,
+    costPrice: 38,
     perc: 30,
     presentation:'450 g'
   },
@@ -207,34 +207,11 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Leche en polvo',
     img: 'assets/products/lechelacampesina.jpg',
-    costPrice: 30,
+    costPrice: 145,
     perc: 30,
-    presentation:'900 g'
+    presentation:'1 Kg'
   },
 
-   {
-     id: 13,
-     oncart: false,
-     quant:0,
-     cat:'frutas',
-    name: 'Mango',
-    img: 'assets/products/mangos.jpg',
-    costPrice: 6,
-    perc: 30,
-    presentation:'kg'
-  },
-
-   {
-     id: 14,
-     oncart: false,
-     quant:0,
-     cat:'snacks',
-    name: 'Trululu',
-    img: 'assets/products/trululus.jpg',
-    costPrice: 5,
-    perc: 30,
-    presentation:'Paquete'
-  },
 
    {
      id: 15,
@@ -243,7 +220,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Costilla de res',
     img: 'assets/products/costilla.jpg',
-    costPrice: 15,
+    costPrice: 40,
     perc: 30,
     presentation:'kg'
   },
@@ -255,7 +232,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Avena',
     img: 'assets/products/avena.jpg',
-    costPrice: 12,
+    costPrice: 29,
     perc: 30,
     presentation:'500 g'
   },
@@ -267,9 +244,9 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Aceite Mazeite',
     img: 'assets/products/aceitemazeite.jpg',
-    costPrice: 25,
+    costPrice: 76,
     perc: 30,
-    presentation:'lts'
+    presentation:'1 L'
   },
 
    {
@@ -323,7 +300,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Apio españa',
     img: 'assets/products/apioespaña.jpg',
-    costPrice: 6,
+    costPrice: 7.5,
     perc: 30,
     presentation:'500 g'
   },
@@ -334,7 +311,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Arroz mary',
     img: 'assets/products/arrozmary.jpg',
-    costPrice: 5,
+    costPrice: 19,
     perc: 30,
     presentation:'kg'
   },
@@ -367,7 +344,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Cerdo pulpo',
     img: 'assets/products/cerdo.png',
-    costPrice: 26,
+    costPrice: 111,
     perc: 30,
     presentation:'kg'
   },
@@ -378,9 +355,9 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Pabilo',
     img: 'assets/products/pabilo.png',
-    costPrice: 26,
+    costPrice: 5,
     perc: 30,
-    presentation:'kg'
+    presentation:'Und'
   },
   {
      id: 26,
@@ -400,7 +377,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Carne Bistek',
     img: 'assets/products/bistec.png',
-    costPrice: 26,
+    costPrice: 109,
     perc: 30,
     presentation:'kg'
   },
@@ -411,7 +388,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Cambur Verde',
     img: 'assets/products/cambusverde.jpg',
-    costPrice: 2,
+    costPrice: 5,
     perc: 30,
     presentation:'kg'
   },
@@ -433,7 +410,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Lagarto molido',
     img: 'assets/products/lagartomolido.png',
-    costPrice: 25,
+    costPrice: 81,
     perc: 30,
     presentation:'kg'
   },
@@ -444,7 +421,7 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Lagarto picado',
     img: 'assets/products/lagartopicado.png',
-    costPrice: 25,
+    costPrice: 81,
     perc: 30,
     presentation:'kg'
   },
@@ -455,7 +432,7 @@ const PRODUCTS: Product[] = [
      cat:'bebidas',
     name: 'Sangria',
     img: 'assets/products/carorña.jpg',
-    costPrice: 30,
+    costPrice: 142,
     perc: 30,
     presentation:'lts'
   },
@@ -466,7 +443,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Cebolla',
     img: 'assets/products/cebollas.jpg',
-    costPrice: 7,
+    costPrice: 23,
     perc: 30,
     presentation:'kg'
   },
@@ -488,7 +465,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Cereal',
     img: 'assets/products/cereal.jpg',
-    costPrice: 15,
+    costPrice: 40,
     perc: 30,
     presentation:'350 g'
   },
@@ -499,7 +476,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Cilantro',
     img: 'assets/products/cilantro.jpg',
-    costPrice: 5,
+    costPrice: 15,
     perc: 30,
     presentation:'300 g'
   },
@@ -510,7 +487,7 @@ const PRODUCTS: Product[] = [
      cat:'limpieza',
     name: 'Cloro',
     img: 'assets/products/cloro.jpg',
-    costPrice: 3,
+    costPrice: 10.5,
     perc: 30,
     presentation:'500 ml'
   },
@@ -521,9 +498,9 @@ const PRODUCTS: Product[] = [
      cat:'bebidas',
     name: 'Coca Cola',
     img: 'assets/products/cocacola.jpg',
-    costPrice: 15,
+    costPrice: 32,
     perc: 30,
-    presentation:'2.5 lts'
+    presentation:'2 lts'
   },
   {
      id: 38,
@@ -532,7 +509,7 @@ const PRODUCTS: Product[] = [
      cat:'snacks',
     name: 'cocosete',
     img: 'assets/products/cocosete.jpg',
-    costPrice: 8,
+    costPrice: 18,
     perc: 30,
     presentation:'Und.'
   },
@@ -543,7 +520,7 @@ const PRODUCTS: Product[] = [
      cat:'cuidado',
     name: 'Crema dental',
     img: 'assets/products/cremadentalcolgate.jpg',
-    costPrice: 8,
+    costPrice: 36,
     perc: 30,
     presentation:'Und. P'
   },
@@ -554,7 +531,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Harina de trigo',
     img: 'assets/products/harinaleudante.jpg',
-    costPrice: 8,
+    costPrice: 25.5,
     perc: 30,
     presentation:'kg'
   },
@@ -565,7 +542,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Harina Pan',
     img: 'assets/products/harinapan.jpg',
-    costPrice: 7,
+    costPrice: 23,
     perc: 30,
     presentation:'kg'
   },
@@ -577,7 +554,7 @@ const PRODUCTS: Product[] = [
      cat:'lacteos',
     name: 'Huevos',
     img: 'assets/products/huevos.jpg',
-    costPrice: 13,
+    costPrice: 38,
     perc: 30,
     presentation:'15 Und'
   },
@@ -588,32 +565,12 @@ const PRODUCTS: Product[] = [
      cat:'limpieza',
     name: 'Jabon azul',
     img: 'assets/products/jabolrombo.jpg',
-    costPrice: 3.5,
+    costPrice: 13.5,
     perc: 30,
     presentation:'Und'
   },
-  {
-     id: 44,
-     oncart: false,
-     quant:0,
-     cat:'limpieza',
-    name: 'Jabon azul',
-    img: 'assets/products/jabonlasllaves.jpg',
-    costPrice: 6,
-    perc: 30,
-    presentation:'Und'
-  },
-  {
-     id: 45,
-     oncart: false,
-     quant:0,
-     cat:'limpieza',
-    name: 'Jabon en polvo',
-    img: 'assets/products/jabonpolvollaves.jpg',
-    costPrice: 25,
-    perc: 30,
-    presentation:'kg'
-  },
+
+ 
   {
      id: 46,
      oncart: false,
@@ -621,7 +578,7 @@ const PRODUCTS: Product[] = [
      cat:'limpieza',
     name: 'Jabon en polvo',
     img: 'assets/products/jabonpolvoultrex.jpg',
-    costPrice: 10,
+    costPrice: 37,
     perc: 30,
     presentation:'kg'
   },
@@ -632,7 +589,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Leche condensada',
     img: 'assets/products/lechecondensada.jpg',
-    costPrice: 18,
+    costPrice: 35,
     perc: 30,
     presentation:'Und'
   },
@@ -644,7 +601,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Lechosa',
     img: 'assets/products/lechosa.jpg',
-    costPrice: 5,
+    costPrice: 10,
     perc: 30,
     presentation:'kg'
   },
@@ -677,7 +634,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Mayonesa mavesa  ',
     img: 'assets/products/mayonesa.jpg',
-    costPrice: 18,
+    costPrice: 55,
     perc: 30,
     presentation:'445 g'
   },
@@ -688,7 +645,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Papa',
     img: 'assets/products/papas.jpg',
-    costPrice: 6,
+    costPrice: 12,
     perc: 30,
     presentation:'kg  '
   },
@@ -699,7 +656,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Parchita',
     img: 'assets/products/parchita.jpg',
-    costPrice: 8,
+    costPrice: 15,
     perc: 30,
     presentation:'Kg'
   },{
@@ -709,7 +666,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Pasta primor larga',
     img: 'assets/products/pastaprimorlarga.jpg',
-    costPrice: 8,
+    costPrice: 25,
     perc: 30,
     presentation:'kg'
   },
@@ -720,7 +677,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Pasta primor pluma',
     img: 'assets/products/pastaprimorpluma.jpg',
-    costPrice: 8,
+    costPrice: 25,
     perc: 30,
     presentation:'kg'
   },
@@ -731,7 +688,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Pepino',
     img: 'assets/products/pepino.jpg',
-    costPrice: 5,
+    costPrice: 15,
     perc: 30,
     presentation:'kg'
   },
@@ -742,7 +699,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Pimenton',
     img: 'assets/products/pimenton.jpg',
-    costPrice: 15,
+    costPrice: 20,
     perc: 30,
     presentation:'kg'
   },
@@ -753,7 +710,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Platano verde',
     img: 'assets/products/platanosverdes.jpg',
-    costPrice: 5,
+    costPrice: 16,
     perc: 30,
     presentation:'kg'
   },
@@ -764,7 +721,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Platano amarillo',
     img: 'assets/products/amarillo.jpg',
-    costPrice: 5,
+    costPrice: 16,
     perc: 30,
     presentation:'kg'
   },
@@ -775,8 +732,8 @@ const PRODUCTS: Product[] = [
      cat:'carnes',
     name: 'Pollo',
     img: 'assets/products/pollo.jpg',
-    costPrice: 18,
-    perc: 30,
+    costPrice: 70,
+    perc: 20,
     presentation:'kg'
   },
   {
@@ -786,7 +743,7 @@ const PRODUCTS: Product[] = [
      cat:'lacteos',
     name: 'Queso blanco',
     img: 'assets/products/quesoblanco.jpg',
-    costPrice: 26,
+    costPrice: 76,
     perc: 30,
     presentation:'kg'
   },
@@ -797,7 +754,7 @@ const PRODUCTS: Product[] = [
      cat:'lacteos',
     name: 'Queso ahumado',
     img: 'assets/products/quesoahumado.jpg',
-    costPrice: 28,
+    costPrice: 76,
     perc: 30,
     presentation:'kg'
   },
@@ -808,7 +765,7 @@ const PRODUCTS: Product[] = [
      cat:'bebidas',
     name: 'Ron Casique',
     img: 'assets/products/roncasique.jpg',
-    costPrice: 50,
+    costPrice: 142,
     perc: 30,
     presentation:'lts'
   },
@@ -819,7 +776,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Pasta ronco larga',
     img: 'assets/products/roncolarga.jpg',
-    costPrice: 10,
+    costPrice: 25,
     perc: 30,
     presentation:'kg'
   },
@@ -830,21 +787,11 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Pasta ronco pluma',
     img: 'assets/products/roncopluma.jpg',
-    costPrice: 10,
+    costPrice: 25,
     perc: 30,
     presentation:'kg'
   },
-  {
-     id: 66,
-     oncart: false,
-     quant:0,
-     cat:'viveres',
-    name: 'Galletas saltitacos',
-    img: 'assets/products/saltitacos.jpg',
-    costPrice: 15,
-    perc: 30,
-    presentation:'7 tacos'
-  },
+
   {
      id: 67,
      oncart: false,
@@ -852,7 +799,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Sal',
     img: 'assets/products/salcristal.jpg',
-    costPrice: 3,
+    costPrice: 10,
     perc: 30,
     presentation:'kg'
   },
@@ -863,7 +810,7 @@ const PRODUCTS: Product[] = [
      cat:'snacks',
     name: 'Samba',
     img: 'assets/products/samba.jpg',
-    costPrice: 8,
+    costPrice: 18,
     perc: 30,
     presentation:'Und.'
   },
@@ -874,7 +821,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Yuca',
     img: 'assets/products/yucas.jpg',
-    costPrice: 4,
+    costPrice: 12,
     perc: 30,
     presentation:'kg'
   },
@@ -885,7 +832,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Piña',
     img: 'assets/products/piña.jpg',
-    costPrice: 6,
+    costPrice: 12,
     perc: 30,
     presentation:'kg'
   },
@@ -896,21 +843,11 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Apio',
     img: 'assets/products/apio.jpg',
-    costPrice: 6,
-    perc: 30,
-    presentation:'kg'
-  },
-   {
-     id: 72,
-     oncart: false,
-     quant:0,
-     cat:'frutas',
-    name: 'Mora',
-    img: 'assets/products/mora.jpg',
     costPrice: 20,
     perc: 30,
     presentation:'kg'
   },
+   
    {
      id: 73,
      oncart: false,
@@ -918,7 +855,7 @@ const PRODUCTS: Product[] = [
      cat:'bebidas',
     name: 'Pepsi',
     img: 'assets/products/pepsi.jpg',
-    costPrice: 15,
+    costPrice: 36.5,
     perc: 30,
     presentation:'2.5 lts'
   },
@@ -929,7 +866,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Zanahorias',
     img: 'assets/products/zanahorias.jpg',
-    costPrice: 4,
+    costPrice: 16,
     perc: 30,
     presentation:'kg'
   },
@@ -940,7 +877,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Durazno',
     img: 'assets/products/duraznos.jpg',
-    costPrice: 18,
+    costPrice: 40,
     perc: 30,
     presentation:'kg'
   },
@@ -951,9 +888,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Manzanas',
     img: 'assets/products/manzana.jpg',
-    costPrice: 10,
+    costPrice: 12,
     perc: 30,
-    presentation:'3 Und'
+    presentation:'Und'
   },
    {
      id: 77,
@@ -964,7 +901,7 @@ const PRODUCTS: Product[] = [
     img: 'assets/products/gif1.jpg',
     costPrice: 50,
     perc: 0,
-    presentation:'Und'
+    presentation:'180'
   },
    {
      id: 78,
@@ -973,7 +910,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 25$',
     img: 'assets/products/gif2.jpg',
-    costPrice: 125,
+    costPrice: 456,
     perc: 0,
     presentation:'Und'
   },
@@ -984,7 +921,7 @@ const PRODUCTS: Product[] = [
      cat:'viveres',
     name: 'Gift 50$',
     img: 'assets/products/gif3.jpg',
-    costPrice: 250,
+    costPrice: 913,
     perc: 0,
     presentation:'Und'
   },
@@ -995,7 +932,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Acelga',
     img: 'assets/products/acelga.jpg',
-    costPrice: 3,
+    costPrice: 5,
     perc: 30,
     presentation:'250 g'
   },
@@ -1006,7 +943,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Espinaca',
     img: 'assets/products/espinaa.jpg',
-    costPrice: 4,
+    costPrice: 5,
     perc: 30,
     presentation:'250 g'
   },
@@ -1017,7 +954,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Berenjenas',
     img: 'assets/products/berenjena.jpg',
-    costPrice: 6,
+    costPrice: 15,
     perc: 30,
     presentation:'kg'
   },
@@ -1028,20 +965,9 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Calabacin',
     img: 'assets/products/calabacin.jpg',
-    costPrice: 6,
+    costPrice: 15,
     perc: 30,
     presentation:'kg'
-  },
-  {
-     id: 84,
-     oncart: false,
-     quant:0,
-     cat:'frutas',
-    name: 'Brocoli',
-    img: 'assets/products/brocoli.jpg',
-    costPrice: 8,
-    perc: 30,
-    presentation:'Und'
   },
   {
      id: 85,
@@ -1050,7 +976,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Repollo',
     img: 'assets/products/repollo.jpg',
-    costPrice: 6,
+    costPrice: 8,
     perc: 30,
     presentation:'Und'
   },
@@ -1061,7 +987,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Lechuga',
     img: 'assets/products/lechuga.jpg',
-    costPrice: 6,
+    costPrice: 10,
     perc: 30,
     presentation:'Und'
   }
