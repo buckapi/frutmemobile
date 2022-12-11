@@ -51,12 +51,12 @@
                 <div class="col-auto">$ 0.00</div>
             </div>
 
-            <div class="row mb-3">
+           <!--  <div class="row mb-3">
                 <div class="col">
                     <p>Subtotal</p>
                 </div>
                 <div class="col-auto">{{currency}} {{_butler.orderSelected[0]  | number:'1.2-2'}}</div>
-            </div>
+            </div> -->
 
             <div class="row fw-bold mb-4">
                 <div class="mb-3 col-12">
@@ -65,7 +65,7 @@
                 <div class="col">
                     <p>Total</p>
                 </div>
-                <div class="col-auto">{{currency}} {{_butler.orderSelected[0]  | number:'1.2-2'}}</div>
+                <div class="col-auto">{{currency}} {{_butler.orderSelected[0].total  | number:'1.2-2'}}</div>
             </div>
 
             <!-- Button -->

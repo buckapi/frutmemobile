@@ -30,7 +30,7 @@ const PRODUCTS: Product[] = [
      cat:'frutas',
     name: 'Tomates',
     img: 'assets/products/tomates.jpg',
-    costPrice: 10,
+    costPrice: 18,
     perc: 30,
     presentation:'Kg'
   },
@@ -1089,7 +1089,7 @@ total=0;
   
 
   }
-precioDolar= 5;
+precioDolar= 18.6;
 currency = "USD";
   products = PRODUCTS;
 }
